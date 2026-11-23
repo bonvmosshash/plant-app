@@ -8,24 +8,6 @@
   <meta name="apple-mobile-web-app-title" content="植物管理">
   <title>マイ植物管理カレンダー</title>
   <style>
-    :root {
-      --primary: #2e7d32;
-      --primary-light: #e8f5e9;
-      --accent: #0288d1;
-      --accent-light: #e1f5fe;
-      --fert: #ef6c00;
-      --fert-light: #fff3e0;
-      --vital: #00897b;
-      --vital-light: #e0f2f1;
-      --repot: #6d4c41;
-      --repot-light: #efebe9;
-      --bg: #f5f7f6;
-      --card: #ffffff;
-      --text: #222222;
-      --sub: #666666;
-      --border: #e0e0e0;
-      --danger: #d32f2f;
-    }
     * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
     body {
       margin: 0;
@@ -239,7 +221,7 @@
     }
     .plant-card.selected { border-color: #2e7d32; background: #f9fdf9; }
     .checkbox-wrap { padding-top: 2px; }
-    input[type="checkbox"] { width: 20px; height: 20px; accent-color: #2e7d32; }
+    input.chk { width: 20px; height: 20px; accent-color: #2e7d32; }
     .plant-info { flex: 1; min-width: 0; }
     .plant-header {
       display: flex;
@@ -352,3 +334,22 @@
       margin-bottom: 6px;
       font-size: 13px;
       display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .fab {
+      position: fixed;
+      right: 20px;
+      bottom: 24px;
+      background: #2e7d32;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      padding: 14px 20px;
+      font-size: 15px;
+      font-weight: bold;
+      box-shadow: 0 4px 12px rgba(46,125,50,0.35);
+      cursor: pointer;
+      z-index: 95;
+    }
+    .modal-bg {
