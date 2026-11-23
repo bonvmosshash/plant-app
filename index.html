@@ -30,12 +30,12 @@
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
-      background: var(--bg);
-      color: var(--text);
+      background: #f5f7f6;
+      color: #222222;
       padding-bottom: 90px;
     }
     header {
-      background: var(--primary);
+      background: #2e7d32;
       color: white;
       padding: 12px 16px;
       position: sticky;
@@ -80,10 +80,10 @@
       gap: 8px;
       font-weight: bold;
     }
-    .weather-temp { font-size: 18px; color: var(--primary); }
+    .weather-temp { font-size: 18px; color: #2e7d32; }
     .weather-sub {
       font-size: 12px;
-      color: var(--sub);
+      color: #666666;
       margin-top: 4px;
       display: flex;
       justify-content: space-between;
@@ -104,7 +104,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       background: white;
-      border-bottom: 1px solid var(--border);
+      border-bottom: 1px solid #e0e0e0;
     }
     .view-tab {
       border: none;
@@ -112,13 +112,13 @@
       padding: 11px;
       font-size: 14px;
       font-weight: bold;
-      color: var(--sub);
+      color: #666666;
       border-bottom: 3px solid transparent;
       cursor: pointer;
     }
     .view-tab.active {
-      color: var(--primary);
-      border-bottom-color: var(--primary);
+      color: #2e7d32;
+      border-bottom-color: #2e7d32;
       background: #f9fdf9;
     }
     .season-bar {
@@ -132,7 +132,6 @@
       gap: 6px;
       overflow-x: auto;
     }
-    .season-bar::-webkit-scrollbar { display: none; }
     .season-btns {
       display: flex;
       gap: 3px;
@@ -148,7 +147,7 @@
       border-radius: 7px;
       font-size: 11px;
       font-weight: bold;
-      color: var(--sub);
+      color: #666666;
       white-space: nowrap;
       cursor: pointer;
     }
@@ -162,24 +161,23 @@
       gap: 8px;
       padding: 10px 16px;
       background: white;
-      border-bottom: 1px solid var(--border);
+      border-bottom: 1px solid #e0e0e0;
     }
-    .folder-bar::-webkit-scrollbar { display: none; }
     .folder-chip {
       padding: 6px 14px;
       border-radius: 20px;
-      border: 1px solid var(--border);
+      border: 1px solid #e0e0e0;
       background: white;
-      color: var(--sub);
+      color: #666666;
       font-size: 13px;
       font-weight: bold;
       white-space: nowrap;
       cursor: pointer;
     }
     .folder-chip.active {
-      background: var(--primary);
+      background: #2e7d32;
       color: white;
-      border-color: var(--primary);
+      border-color: #2e7d32;
     }
     .container {
       padding: 12px 16px;
@@ -191,7 +189,7 @@
       padding: 10px 12px;
       border-radius: 12px;
       margin-bottom: 12px;
-      border: 1px solid var(--border);
+      border: 1px solid #e0e0e0;
       font-size: 13px;
     }
     .bulk-top {
@@ -221,27 +219,27 @@
       align-items: center;
       gap: 4px;
     }
-    .btn-water { background: var(--accent-light); color: var(--accent); }
-    .btn-mist { background: var(--primary-light); color: var(--primary); }
-    .btn-fert { background: var(--fert-light); color: var(--fert); }
-    .btn-vital { background: var(--vital-light); color: var(--vital); }
-    .btn-repot { background: var(--repot-light); color: var(--repot); }
-    .btn-primary { background: var(--primary); color: white; width: 100%; justify-content: center; padding: 12px; font-size: 15px; }
-    .btn-outline { background: white; border: 1px solid var(--border); color: var(--sub); }
+    .btn-water { background: #e1f5fe; color: #0288d1; }
+    .btn-mist { background: #e8f5e9; color: #2e7d32; }
+    .btn-fert { background: #fff3e0; color: #ef6c00; }
+    .btn-vital { background: #e0f2f1; color: #00897b; }
+    .btn-repot { background: #efebe9; color: #6d4c41; }
+    .btn-primary { background: #2e7d32; color: white; width: 100%; justify-content: center; padding: 12px; font-size: 15px; }
+    .btn-outline { background: white; border: 1px solid #e0e0e0; color: #666666; }
     .plant-card {
-      background: var(--card);
+      background: white;
       border-radius: 14px;
       padding: 14px;
       margin-bottom: 10px;
-      border: 1px solid var(--border);
+      border: 1px solid #e0e0e0;
       display: flex;
       gap: 12px;
       align-items: flex-start;
       box-shadow: 0 1px 3px rgba(0,0,0,0.03);
     }
-    .plant-card.selected { border-color: var(--primary); background: #f9fdf9; }
+    .plant-card.selected { border-color: #2e7d32; background: #f9fdf9; }
     .checkbox-wrap { padding-top: 2px; }
-    input[type="checkbox"] { width: 20px; height: 20px; accent-color: var(--primary); }
+    input[type="checkbox"] { width: 20px; height: 20px; accent-color: #2e7d32; }
     .plant-info { flex: 1; min-width: 0; }
     .plant-header {
       display: flex;
@@ -250,7 +248,7 @@
       gap: 8px;
     }
     .plant-name { font-weight: bold; font-size: 16px; margin: 0 0 2px 0; word-break: break-word; }
-    .reg-date { font-size: 11px; color: var(--sub); margin-bottom: 4px; }
+    .reg-date { font-size: 11px; color: #666666; margin-bottom: 4px; }
     .badge {
       font-size: 11px;
       padding: 2px 8px;
@@ -267,7 +265,7 @@
       font-size: 12px;
     }
     .status-box { background: #f8f9fa; padding: 6px 8px; border-radius: 8px; }
-    .status-label { color: var(--sub); display: block; font-size: 11px; }
+    .status-label { color: #666666; display: block; font-size: 11px; }
     .status-val { font-weight: bold; margin-top: 2px; display: block; }
     .sub-care-row {
       display: grid;
@@ -283,13 +281,13 @@
       border-radius: 7px;
       text-align: center;
     }
-    .sub-care-box span { display: block; color: var(--sub); font-size: 10px; }
-    .sub-care-box strong { display: block; margin-top: 2px; color: var(--text); font-size: 11px; }
-    .due-alert { color: var(--danger); }
+    .sub-care-box span { display: block; color: #666666; font-size: 10px; }
+    .sub-care-box strong { display: block; margin-top: 2px; color: #222222; font-size: 11px; }
+    .due-alert { color: #d32f2f; }
     .plant-memo {
       margin-top: 8px;
       font-size: 12px;
-      color: var(--sub);
+      color: #666666;
       background: #fffde7;
       padding: 6px 8px;
       border-radius: 6px;
@@ -301,12 +299,11 @@
       margin-top: 10px;
     }
     .card-actions .btn { justify-content: center; padding: 7px 2px; font-size: 11px; white-space: nowrap; }
-
     .cal-box {
       background: white;
       border-radius: 14px;
       padding: 14px;
-      border: 1px solid var(--border);
+      border: 1px solid #e0e0e0;
       margin-bottom: 12px;
     }
     .cal-header {
@@ -322,12 +319,7 @@
       gap: 4px;
       text-align: center;
     }
-    .cal-dow {
-      font-size: 11px;
-      font-weight: bold;
-      color: var(--sub);
-      padding-bottom: 6px;
-    }
+    .cal-dow { font-size: 11px; font-weight: bold; color: #666666; padding-bottom: 6px; }
     .cal-dow.sun { color: #d32f2f; }
     .cal-dow.sat { color: #1976d2; }
     .cal-cell {
@@ -342,10 +334,21 @@
       background: #ffffff;
     }
     .cal-cell.empty { background: transparent; border-color: transparent; cursor: default; }
-    .cal-cell.today { border: 2px solid var(--primary); background: #f1f8e9; }
-    .cal-cell.selected { background: #e8f5e9; border-color: var(--primary); box-shadow: 0 0 0 1px var(--primary); }
+    .cal-cell.today { border: 2px solid #2e7d32; background: #f1f8e9; }
+    .cal-cell.selected { background: #e8f5e9; border-color: #2e7d32; box-shadow: 0 0 0 1px #2e7d32; }
     .cal-day-num { font-size: 12px; font-weight: bold; margin-bottom: 3px; }
-    .cal-dots {
+    .cal-dots { display: flex; flex-wrap: wrap; justify-content: center; gap: 1px; font-size: 11px; line-height: 1.1; }
+    .cal-detail {
+      background: white;
+      border-radius: 14px;
+      padding: 14px;
+      border: 1px solid #e0e0e0;
+    }
+    .cal-detail h3 { margin: 0 0 10px 0; font-size: 15px; color: #2e7d32; }
+    .cal-log-item {
+      padding: 8px 10px;
+      border-radius: 8px;
+      background: #f8f9fa;
+      margin-bottom: 6px;
+      font-size: 13px;
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
